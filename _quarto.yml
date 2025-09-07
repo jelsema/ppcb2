@@ -1,0 +1,21 @@
+project:
+  type: book
+
+book:
+  title: "ppcb2"
+  author: "Casey Jelsema"
+  date: "9/7/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: source
+
