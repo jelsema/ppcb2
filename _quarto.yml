@@ -2,20 +2,28 @@ project:
   type: book
 
 book:
-  title: "ppcb2"
+  title: "The Potato-Peel Cookbook"
+  subtitle: "No ads, no stories, just recipes"
   author: "Casey Jelsema"
   date: "9/7/2025"
   chapters:
     - index.qmd
+    - substitutions.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: cosmo
+      dark: darkly
   pdf:
     documentclass: scrreprt
+
+knitr:
+  opts_chunk: 
+    echo: false
+    warning: false
+    message: false
 
 editor: source
 
