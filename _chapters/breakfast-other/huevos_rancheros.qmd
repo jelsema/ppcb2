@@ -1,0 +1,108 @@
+
+
+```{r}
+#| label: setup-breakfast
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Huevos Rancheros
+
+![cinnamon biscuits](../../_images/huevos_rancheros.jpg)
+
+
+A popular southwest / Mexican style breakfast. I view it a bit like a pizza: There’s a generally agreed-upon basis, but plenty of room for variation. This is how I like to make them. This is intended to make 2 servings.
+
+**Source:** Experimentation.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: huevo-rancheros
+
+dat <- tibble(
+  Dough = c(
+    "1/4 lb chorizo (ground)",
+    "3-4 eggs",
+    "Green Chile (chopped)",
+    "Corn tortillas",
+    "Potatoe or hash browns",
+    "",
+    ""
+  ),
+  Optional = c(
+    "Green pepper (chopped)",
+    "Onions (chopped)",
+    "Corn",
+    "Black beans",
+    "Tools",
+    "All of your frying pans",
+    "Spatula"
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") |> 
+  style_tt( i=5, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Dice the potatoes and start them frying in a skillet (see Home fries). Or jump straight to hash browns.
+2. Start frying the chorizo. Personally, I like to break it up into many chunks and fry it to the point that it gets a bit crispy or crunchy.
+3. While the chorizo is frying, put some chile, beans, and corn into a smaller pan and set it on low heat. You can start it at higher heat if you want, but it’s just supposed to get warm, so eventually lower the heat. I throw some olive oil in the pan as well. 
+4. When the chorizo is done, put it on a plate and crack 1-2 eggs into the pan. Prepare them how you like, my preference is over-medium, but scrambled is also good.
+5. While the egg is cooking, use another pan to crisp the tortilla. Depending on how quickly your eggs finish, you might need to start this before the eggs.
+6. When the tortilla has a little bit of crisp (on both sides), but not too much, put it on your plate, add the eggs, add some of the chile/corn/bean mixture, and add the chorizo.
+
+
+
+**Variations:**
+
+- If you don’t have green chile, you can use salsa as a substitute, but know that I’m judging you for it.
+- You don't have to include the corn and beans. Really you don't have to include anything, but then why are you following this recipe?
+
+- If you would rather your tortilla be soft, don’t fry it (one less pan, hooray!). You can just use it plain, or warm it up slightly. A flour tortilla is probably better if you're doing this.
+- I like to add several more things to my huevos rancheros: Guacamole, cheese (cotija!), and sometimes a drizzle of my southwest dressing.
+
+**Notes:**
+
+- I often have a black bean and corn mixture on hand (literally just a can of black beans, and a can of corn, both drained, and then dumped into the same bowl). It goes great on salads, quesadillas, this, and probably more that I’m forgetting. If you don’t have that, you may want to make sure you have enough people to make breakfast for, have other uses for the corn and beans, or forgo the corn and beans.
+
+
+
+
+
+
+
+
+
+

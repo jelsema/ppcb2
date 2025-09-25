@@ -1,0 +1,136 @@
+
+
+```{r}
+#| label: setup-breakfast
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Bacon Sandwich
+
+![cinnamon biscuits](../../_images/cinnamon_biscuits.jpg)
+
+
+Okay, so this is at least one good use for biscuits other then biscuits and gravy. I like these better than proper cinnamon rolls, and they're far easier to make.
+
+
+**Source:** No particular source, just made it up (we were out of both eggs and breakfast sausage one day).
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: cinnamon-roll-biscuits
+
+dat <- tibble(
+  Dough = c(
+    "1 cup milk",
+    "1 tbsp apple cider vinegar",
+    "290 g flour (~2 cups)",
+    "1 tbsp baking power",
+    "1/2 tsp baking soda",
+    "1 tsp salt",
+    "4 tbsp butter"
+  ),
+  Filling = c(
+    "2 tbsp cinnamon",
+    "2 tbsp brown sugar",
+    "Frosting",
+    "1 cup powdered sugar",
+    "2 tbsp butter",
+    "1 tbsp milk",
+    "1 tsp vanilla extract"
+  ),
+  Tools = c(
+    "Mixing bowls",
+    "Mixing spoon",
+    "Knife/dough scraper",
+    "Cast iron skillet",
+    "I didn't keep track of everything",
+    "This is all free, stop complaining",
+    "And it's ad-free"
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") |> 
+  style_tt( i=3, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Preheat the oven to 450° F.
+2. Make the dough from the biscuit recipe.
+3. Mix the filling in a small dish. Very tricky, this step.
+4. Try to aim for making a “long”and "flat" rectangle. I aim for around 10 inches wide, around 9-8 inches deep, and 1/4 - 1/2 inch thick.
+5. Spread the filling out over most of the dough-rectangle. Start right at the front edge, and leave maybe 1 - 1.5 inches at the far end.
+6. From the front edge, roll the dough up instead of folding it.
+  - Depending on how wet or dry your dough is, this might be a little annoying.
+  - Spread a little flour in front of the dough and use the dough scraper to get underneath, that helps get the rolling started.
+  - It might look terrible, and that’s fine, I won’t judge how your cinnamon rolls look.
+6. Use a knife or dough scraper to slice the log of dough into disks, about 1 - 1.5 inches thick. 7. Place them in the skillet They can touch each other, or there can be a bit of space, it doesn’t matter that much.
+8. Brush the tops and sides with some melted butter and bake for 10-15 minutes.
+
+
+While the biscuits are baking, make the frosting If you do this well before the biscuits are done cooking, it will have a chance to congeal slightly.
+
+- Melt the butter.
+- Add the powdered sugar, milk, and vanilla extract and whisk until smooth.
+- When the cinnamon biscuits are done, try to let them cool before drizzling with the glaze, as that will help prevent it from all running down the sides. If you let he glaze cool a bit, that will also help in this regard.
+
+
+
+**Variations:**
+
+- Filling: I usually use 1/2 coconut sugar and 1/2 monkfruit sugar. You get the sweetness with less calories.
+- Frosting: I use the monkfruit powered sugar. It seems to dissolve more than regular powdered sugar, though, so I increase that by about 1/3.
+
+- You can swap (or just add) maple syrup for vanilla extra in the frosting.
+- You can also add some cream cheese, because why not?
+- Adjust the amount of powdered sugar/milk in the frosting to make it more or less runny as you like.
+- Otherwise don't change these. They're perfect as they are.
+
+
+
+**Notes:**
+
+- If you don't have a cast iron skillet, I guess you can use a 9x9 baking pan. But I will judge you for that.
+- You can use lemon juice instead of apple cider vinegar.
+- Pairs will with bacon, especially if you make some extra frosting and drizzle a bit of that on the bacon.
+
+
+
+
+
+
+
+
+
+

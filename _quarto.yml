@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "The Potato-Peel Cookbook"
@@ -12,11 +13,15 @@ book:
     - substitutions.qmd
     - part: "Breakfast Batters"
       chapters:
-        - _chapters/breakfast/dutch_baby.qmd
-        - _chapters/breakfast/french_toast.qmd
-        - _chapters/breakfast/pancakes.qmd
-        - _chapters/breakfast/waffles.qmd
-
+        - _chapters/breakfast-batter/dutch_baby.qmd
+        - _chapters/breakfast-batter/french_toast.qmd
+        - _chapters/breakfast-batter/pancakes.qmd
+        - _chapters/breakfast-batter/waffles.qmd
+    - part: "Breakfast Other"
+      chapters:
+        - _chapters/breakfast-other/bacon_sandwich.qmd
+        - _chapters/breakfast-other/cinnamon_roll_biscuits.qmd
+        - _chapters/breakfast-other/huevos_rancheros.qmd
 format:
   html:
     theme: 
