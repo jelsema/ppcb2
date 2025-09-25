@@ -1,0 +1,88 @@
+
+
+
+```{r}
+#| label: setup-breakfast
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+
+## Pancakes
+
+Pankcakes are, well, they’re okay.
+
+**Source:** I don’t remember.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: pancakes-breakfast
+
+dat <- tibble(
+  Ingredients = c(
+    "1 1/2 cups flour (??? g)",
+    "2 tbsp sugar (??? g)",
+    "1/2 tsp salt (4-5 g)",
+    "1 1/2 - 2 tbsp baking powder",
+    "1 eggs",
+    "1 1/4 cup milk",
+    "3 tbsp oil",
+    "2 tsp vanilla extract"
+  ),
+  Tools = c(
+    "Mixing bowl x2",
+    "Whisk",
+    "Measuring cups",
+    "Frying pan",
+    "Spatula",
+    rep("",3)
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") 
+
+
+```
+
+
+
+**Directions:**
+
+1. Set the pan on medium heat to start warming.
+2. Beat the eggs, add the rest of the wet ingredients (milk, oil, vanilla) and mix.
+3. Whisk the dry ingredients (flour, salt, sugar, baking powder) together. I usually do this seperately, but that probably doesn’t matter.
+4. Add the wet ingredients to the dry, and mix, but leave a bit lumpy. Or mix until smooth. It doesn’t matter that much.
+5. Put however much you want into the pan at a time. Usually 1/2 - 3/4 cup is good.
+6. Flip when the surface gets bubbly.
+
+**Variations:**
+
+- None that I’ve experimented with. I don’t eat pancakes often.
+
+
+**Notes:**
+
+- Nothing yet.
+
+

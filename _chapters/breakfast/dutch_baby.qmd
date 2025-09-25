@@ -1,0 +1,98 @@
+
+
+```{r}
+#| label: setup-breakfast
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Dutch Baby
+
+A Dutch baby is kind of a weird hybrid between a pancake and french toast, maybe. I like it, though I prefer waffles or french toast.
+
+
+**Source:** I don’t remember.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: dutch-baby
+
+dat <- tibble(
+  Ingredients = c(
+    "1/2 cup flour",
+    "1/2 cup milk",
+    "3 eggs",
+    "1-2 tbsp sugar",
+    "4 tbsp butter",
+    "1/2 - 1 tsp vanilla extract",
+    "1/2 tsp salt",
+    "1 tsp cinnamon"
+  ),
+  Tools = c(
+    "Cast iron skillet",
+    "Mixing bowl",
+    "Whisk",
+    "Topping",
+    "Powdered sugar",
+    "Syrup (maple)",
+    "Fried chicken",
+    "Fruit"
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") |> 
+  style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+# Above makes the table. When eventually pushing this to the web, see if I can get the borders to work properly
+
+```
+
+
+
+**Directions:**
+
+1. Preheat oven to 425° F.
+2. Put butter in skillet and place in oven to melt.
+3. Mix all of the other ingredients in a mixing bowl.
+  - Once butter is melted and skillet it warm, remove from oven, pour in batter, and return to oven.
+  - The skillet should be warm/hot, so that there is an immediate crisping of some of the batter. The whole thing will puff up a lot, but then collapse once you take it out.
+4. Bake for 20 minutes. Then reduce temp to 300° and bake 5 more minutes.
+
+
+**Variations:**
+
+- Change the amount and/or type of spice to suit your taste. I like cinnamon, nutmeg works. Maybe thyme if you’re weird.
+
+
+**Notes:**
+
+- Nothing yet.
+
+
+

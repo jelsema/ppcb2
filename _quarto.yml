@@ -6,18 +6,28 @@ book:
   subtitle: "No ads, no stories, just recipes"
   author: "Casey Jelsema"
   date: "9/7/2025"
+  favicon: _images/general/ppcb_logo.png
   chapters:
     - index.qmd
     - substitutions.qmd
-    - intro.qmd
+    - part: "Breakfast Batters"
+      chapters:
+        - _chapters/breakfast/dutch_baby.qmd
+        - _chapters/breakfast/french_toast.qmd
+        - _chapters/breakfast/pancakes.qmd
+        - _chapters/breakfast/waffles.qmd
 
 format:
   html:
     theme: 
       light: cosmo
       dark: darkly
-  pdf:
-    documentclass: scrreprt
+    # toc: true
+    # toc-depth: 2 # Includes levels #, ##
+    # toc-expand: 2
+    # toc-location: left
+  # pdf:
+  #   documentclass: scrreprt
 
 knitr:
   opts_chunk: 
