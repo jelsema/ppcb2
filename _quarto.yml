@@ -7,21 +7,21 @@ book:
   subtitle: "No ads, no stories, just recipes"
   author: "Casey Jelsema"
   date: "9/7/2025"
-  favicon: _images/general/ppcb_logo.png
+  favicon: images/general/ppcb_logo.png
   chapters:
     - index.qmd
     - substitutions.qmd
     - part: "Breakfast Batters"
       chapters:
-        - _chapters/breakfast-batter/dutch_baby.qmd
-        - _chapters/breakfast-batter/french_toast.qmd
-        - _chapters/breakfast-batter/pancakes.qmd
-        - _chapters/breakfast-batter/waffles.qmd
+        - chapters/breakfast-batter/dutch_baby.qmd
+        - chapters/breakfast-batter/french_toast.qmd
+        - chapters/breakfast-batter/pancakes.qmd
+        - chapters/breakfast-batter/waffles.qmd
     - part: "Breakfast Other"
       chapters:
-        - _chapters/breakfast-other/bacon_sandwich.qmd
-        - _chapters/breakfast-other/cinnamon_roll_biscuits.qmd
-        - _chapters/breakfast-other/huevos_rancheros.qmd
+        - chapters/breakfast-other/bacon_sandwich.qmd
+        - chapters/breakfast-other/cinnamon_roll_biscuits.qmd
+        - chapters/breakfast-other/huevos_rancheros.qmd
 format:
   html:
     theme: 

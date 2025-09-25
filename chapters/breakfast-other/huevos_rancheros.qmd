@@ -23,7 +23,7 @@ bgcol <- "skyblue4"
 
 ## Huevos Rancheros
 
-![cinnamon biscuits](../../_images/huevos_rancheros.jpg)
+![cinnamon biscuits](../../images/huevos_rancheros.jpg)
 
 
 A popular southwest / Mexican style breakfast. I view it a bit like a pizza: There’s a generally agreed-upon basis, but plenty of room for variation. This is how I like to make them. This is intended to make 2 servings.
