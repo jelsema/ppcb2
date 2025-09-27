@@ -1,7 +1,7 @@
 
 
 ```{r}
-#| label: setup-breakfast
+#| label: setup-breakfast-other-4
 #| results: false
 #| output: false
 
@@ -38,7 +38,7 @@ A popular southwest / Mexican style breakfast. I view it a bit like a pizza: The
 #| label: huevo-rancheros
 
 dat <- tibble(
-  Dough = c(
+  Ingredients = c(
     "1/4 lb chorizo (ground)",
     "3-4 eggs",
     "Green Chile (chopped)",

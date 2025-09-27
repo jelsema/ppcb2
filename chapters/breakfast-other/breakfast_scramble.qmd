@@ -1,0 +1,109 @@
+
+
+```{r}
+#| label: setup-breakfast-other-2
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Breakfast Scramble
+
+<!----- 
+![cinnamon biscuits](../../images/huevos_rancheros.jpg) 
+----->
+
+
+This is a favorite of mine (though I like the huevos rancheros better). Very easy, filling, and delicious. Plenty of room for variation as well. Like with the huevos rancheros, this is intended to be 2 servings.
+
+
+**Source:** Imitating a fairly common restaurant dish.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: breakfast-scramble
+
+dat <- tibble(
+  Ingredients = c(
+    "3 medium red potatoes",
+    "1/3 lb brakfast sausage",
+    "4 eggs",
+    "Copped onion",
+    "Chopped green pepper"
+  ),
+  Tools = c(
+    "Skillet x2",
+    "Spatulas",
+    "Cooking oil",
+    "",
+    ""
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") #|> 
+  # style_tt( i=5, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Start making home fries
+2. In another pan, start frying the sausage.
+3. Occassionally stir the potatoes around so that they get crisped on all sides (this is the reason for the medium/high heat).
+4. Sautee a handful or two of diced onion and green peppers in a separate pan (could be the one you used for sausage).
+5. Once the sausage is done, you can add it to the potatoes.
+6, Once your potatoes are almost done, start frying your egg(s) however you like. Scrambled works great, though I prefer over-medium.
+7. Mix up the potatoes, sausage, and onion/green peppers. Add the eggs on top, salt and pepper to taste.
+
+
+
+**Variations:**
+
+- Drizzle some BBQ sauce over the top. I rather like [BBQ Carnivores](https://bbqcarnivores.com/) sauces for this.
+- Cheese is a good addition to this dish.
+- A layer of sausage gravy also goes nicely with a scramble.
+- Instead of breakfast sausage, you can use (smoked) pulled pork or brisket.
+
+
+
+**Notes:**
+
+- A slice of toast with butter complements this meal very nicely.
+- You can put the onion and green pepper in with the potatoes, but then the potatoes tend to absorb the moisture and lose their crispyness, which I don’t like.
+
+
+
+
+
+
+
+
+
