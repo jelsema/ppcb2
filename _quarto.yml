@@ -20,10 +20,13 @@ book:
     - part: "Breakfast Other"
       chapters:
         - chapters/breakfast-other/bacon_sandwich.qmd
+        - chapters/breakfast-other/breakfast_scramble.qmd
         - chapters/breakfast-other/cinnamon_roll_biscuits.qmd
         - chapters/breakfast-other/huevos_rancheros.qmd
-        - chapters/breakfast-other/breakfast_scramble.qmd
         - chapters/breakfast-other/quiche.qmd
+    - part: "Breakfast Sides"
+      chapters:
+        - chapters/breakfast-other/biscuits.qmd
 format:
   html:
     theme: 

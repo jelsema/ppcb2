@@ -1,0 +1,99 @@
+
+
+```{r}
+#| label: setup-breakfast-sides-3
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Sausage Gravy
+
+
+A staple of the South, this is basically a must-have to go along with biscuits.
+
+
+**Source:** Passed-down directions and watching my wife make it.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: sausage-gravy
+
+dat <- tibble(
+  Ingredients = c(
+    "1/2 - 1/3 lbs ground breakfast sausage",
+    "1-2 cups AP Flour",
+    "Milk",
+    "spices (see below)"
+  ),
+  Tools = c(
+    "Skillet",
+    "Spatulas",
+    "",
+    ""
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") # |> 
+  # style_tt( i=5, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. In the pan/skillet, fry the sausage. Smash it a bit to make it produce more grease. The more the better. Feel free to add additional bacon grease.
+2. Add the flour first. Sprinkle it around evenly and get it to absorb the great and cook a little.
+3. Start adding milk and stirring to incorporate the flour. This can take a bit, that's why I didn't put an amount in the directions. Just keep adding milk until you have the consistency that you want.
+4. Add spices to taste.
+5. Put it on fresh biscuits and ~~get fat~~ enjoy.
+
+
+- Some of the typical spices to use are: Seasoned salt, black pepper, garlic powder, a touch of cayane pepper.
+- Don't be shy with them. Gravy is good with a bit of kick. Better than it being bland.
+
+
+
+
+
+**Variations:**
+
+- Use bacon instead of sausage. Not as great with the resulting gravy, in my opinion, but is a source of grease. Plus, you get bacon.
+- If the sausage didn’t break up at all, you may want to add some bits of the sausage back into he gravy.
+
+
+
+**Notes:**
+
+- Breakfast sausage comes in many forms. I try to avoid links or pre-made patties, as I think they tend to produce less grease, and less little bits of sausage that fall off to get mixed in with the gravy.
+- Don’t use sweetened or flavored milk (alternative milks often have this). It’ll still *work*, but it definitely changes the flavor in a way that I don’t really like.
+
+
+

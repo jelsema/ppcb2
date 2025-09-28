@@ -1,0 +1,96 @@
+
+
+```{r}
+#| label: setup-breakfast-sides-2
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Home Fries
+
+
+I think the name speaks for itself.
+
+**Source:** I decided that frying potatoes couldn’t be *that* hard, so why buy bagged hash browns?
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: home-fries
+
+dat <- tibble(
+  Ingredients = c(
+    "2-3 medium potatoes",
+    "Cooking oil",
+    "Spices/herbs"
+  ),
+  Tools = c(
+    "Skillet",
+    "Spatulas",
+    ""
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") # |> 
+  # style_tt( i=5, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Set your skillet (if you have one, frying pan if not) to heating. I tend to do this at medium to medium/high heat.
+2. Dice up the potatoes. I usually make them into chunks about 1/4-1/2 inch. No need to peel them, just wash and cut off any roots that may have started growing.
+3. Throw some high-heat oil (such as avocado oil) or bacon grease into the skillet, and the dump in the potatoes. 
+  - You don't want TOO much oil, enough to coat all the chunks, but not so much that they're sitting in a pool of oil.
+  - I mean, you CAN have them sitting in a pool. They'll be delicious, but they'll take longer.
+  - Be careful of oil/grease splattering when you dump the potato in. 
+  - Stir the potatoes around to get them all coated with the oil, and then spread them as evenly as you can.
+4. Occasionally stir the potatoes around so that they get crisped on all sides (this is the reason for the medium/high heat). I found that using 2 spatulas helps with flipping them around.
+
+
+
+
+
+**Variations:**
+
+- Sprinkle with seasoned salt, salt, pepper, garlic, or other spices/herbs you like. I usually use seasoned salt.
+
+
+
+**Notes:**
+
+- By “occasional stirring” I mean give the potatoes at least a few minutes to develop a crisp before stirring/tossing them to get another side on the heat. I probably let them sit for about 3-5 minutes, stir them up, and let them sit another 3-5 minutes. After that you can toss them more frequently if you like.
+- All told, I think they cook for 10-15 minutes. When I’m using home fries as a side, I put them on the stove first, and I take them off last. But I like crispy potatoes, you’re welcome to make an inferior version.
+
+
+
+
+
