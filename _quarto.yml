@@ -13,20 +13,22 @@ book:
     - substitutions.qmd
     - part: "Breakfast Batters"
       chapters:
-        - chapters/breakfast-batter/dutch_baby.qmd
-        - chapters/breakfast-batter/french_toast.qmd
+        - chapters/breakfast-batter/dutch-baby.qmd
+        - chapters/breakfast-batter/french-toast.qmd
         - chapters/breakfast-batter/pancakes.qmd
         - chapters/breakfast-batter/waffles.qmd
     - part: "Breakfast Other"
       chapters:
-        - chapters/breakfast-other/bacon_sandwich.qmd
-        - chapters/breakfast-other/breakfast_scramble.qmd
-        - chapters/breakfast-other/cinnamon_roll_biscuits.qmd
-        - chapters/breakfast-other/huevos_rancheros.qmd
+        - chapters/breakfast-other/bacon-sandwich.qmd
+        - chapters/breakfast-other/breakfast-scramble.qmd
+        - chapters/breakfast-other/cinnamon-roll-biscuits.qmd
+        - chapters/breakfast-other/huevos-rancheros.qmd
         - chapters/breakfast-other/quiche.qmd
     - part: "Breakfast Sides"
       chapters:
-        - chapters/breakfast-other/biscuits.qmd
+        - chapters/breakfast-sides/biscuits.qmd
+        - chapters/breakfast-sides/home-fries.qmd
+        - chapters/breakfast-sides/sausage-gravy.qmd
 format:
   html:
     theme: 
