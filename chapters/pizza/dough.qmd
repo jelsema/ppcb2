@@ -1,0 +1,99 @@
+
+
+
+```{r}
+#| label: setup-chapter
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Pizza Dough
+
+
+Maybe this belongs in the bread section, I don’t know. But it’s not really intended to be it’s own thing, so I’m putting it here. Don’t like it? Go make your own cookbook. Or just use a different one. Whatever.
+
+**Source:** Several that I sort of amalgamated, mainly
+[AllRecipes](https://www.allrecipes.com/recipe/20171/quick-and-easy-pizza-crust/), with some elements of 
+[Food.com](https://www.food.com/recipe/restaurant-style-pizza-dough-recipe-by-weight-409380), 
+[Sugardishme](https://www.sugardishme.com/10-minute-pizza-dough/), and probably something from
+[Flour, Water, Salt, Yeast](https://kensartisan.com/flour-water-salt-yeast)?
+
+
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: recipie-name
+
+dat <- tibble(
+  Ingredients = c(
+    "425 g bread flour",
+    "300 g warm water",
+    "1 - 2 1/4 tsp yeast",
+    "9 g salt",
+    "1-2 tbsp olive oil"
+  ),
+  Tools = c(
+    "Large mixing bowl",
+    "Spatula",
+    "Olive oil spray",
+    "",
+    ""
+  )
+)
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") # |> 
+  # style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+
+
+
+**Variations:**
+
+
+
+**Notes:**
+
+- Nothing yet.
+
+
+
+
+
+
+
+
+
+

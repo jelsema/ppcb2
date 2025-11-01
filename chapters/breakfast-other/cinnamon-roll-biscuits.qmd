@@ -21,9 +21,9 @@ bgcol <- "skyblue4"
 
 
 
-## Bacon Sandwich
+## Cinnamon Roll Biscuits
 
-![cinnamon biscuits](../../images/cinnamon_biscuits.jpg)
+![](../../images/cinnamon_biscuits.jpg)
 
 
 Okay, so this is at least one good use for biscuits other then biscuits and gravy. I like these better than proper cinnamon rolls, and they're far easier to make.

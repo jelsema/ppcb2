@@ -29,6 +29,15 @@ book:
         - chapters/breakfast-sides/biscuits.qmd
         - chapters/breakfast-sides/home-fries.qmd
         - chapters/breakfast-sides/sausage-gravy.qmd
+    - part: "Soups & Stews"
+      chapters:
+        - chapters/soups-stews/southwest-black-bean-soup
+        - chapters/soups-stews/chicken-tortilla-soup
+    - part: "Pizza"
+      chapters:
+        - chapters/pizza/dough
+        - chapters/pizza/sauce
+        - chapters/pizza/garlic-bread
 format:
   html:
     theme: 

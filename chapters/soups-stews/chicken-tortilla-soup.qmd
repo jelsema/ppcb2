@@ -1,0 +1,96 @@
+
+
+```{r}
+#| label: setup-chapter
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Chicken Tortilla Soup
+
+This is very easy to make, and I really enjoy it.
+
+**Source:** From a former colleague.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: recipie-name
+
+dat <- tibble(
+  Ingredients = c(
+    "3-4 chicken breasts",
+    "1 packet taco seasoning",
+    "1 can corn",
+    "1 can black beans",
+    "1 small can tomato sauce",
+    "1 small jar salsa",
+    "1 can diced tomatoes"
+  ),
+  Tools = c(
+    "Slow cooker / pressure cooker"
+  )
+)
+
+
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") # |> 
+  # style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Put the chicken into the cooker and cook until it can be shredded (slow cooker: 6-8 hours on low, pressure cooker: about 20 minutes).
+2. shred the chicken.
+3. Add the rest of the ingredients.
+4. Let this cook for a short while, mainly to heat everything up.
+
+**Variations:**
+
+- The can of diced tomatoes is optional. I find it doesn’t really add that much.
+- Adding cheese or sour cream after serving is quite good, though not necessary.
+
+
+**Notes:**
+
+- I like eating this with tortilla chips.
+- Though I just kind of ... like eating tortilla chips.
+
+
+
+
+
+
+
+
+
+
+

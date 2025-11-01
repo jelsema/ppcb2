@@ -23,7 +23,7 @@ bgcol <- "skyblue4"
 
 ## Southwest Quiche
 
-![cinnamon biscuits](../../images/quiche.jpg)
+![](../../images/quiche.jpg)
 
 
 Or as I like to think of it: Breakfast pie.
@@ -135,6 +135,7 @@ As the crust is baking, prepare the filling.
 
 - The “toppings” to mix in can vary. I’ve enjoyed the following: 
   - Chorizo (1/2 pound); onions, green peppers, and green chile (all sauteed); dairy-free cheddar.
+    Fry the chorizo in a skillet to get some nice crunchy bits, saute/simmer the veggies.
   - Sausage, home fries / hash browns (already fried), peppers and onions (sauteed); dairy-free cheddar
 
 
