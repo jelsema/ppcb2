@@ -2,7 +2,7 @@
 
 
 ```{r}
-#| label: setup-chapter
+#| label: setup-pizza-1
 #| results: false
 #| output: false
 
@@ -40,7 +40,7 @@ Maybe this belongs in the bread section, I don’t know. But it’s not really i
 
 
 ```{r}
-#| label: recipie-name
+#| label: pizza-dough
 
 dat <- tibble(
   Ingredients = c(
@@ -48,7 +48,7 @@ dat <- tibble(
     "300 g warm water",
     "1 - 2 1/4 tsp yeast",
     "9 g salt",
-    "1-2 tbsp olive oil"
+    "1-2 tbsp olive oil (optional)"
   ),
   Tools = c(
     "Large mixing bowl",
@@ -77,20 +77,63 @@ dat |>
 
 **Directions:**
 
+1. Add the flour, yeast, and salt to the mixing bowl, and mix.
+2. (Optional) Pour 1-2 tbsp oil over the flour.
+3. Pour in the water and mix until the dough comes together.
+4. Dump the dough out onto a work surface. I use a silicon mat and I don't flour it.
+5. Knead for several minutes. Mainly make sure all the flour gets incorporated, and then work the dough a little more until it becomes somewhat smooth/elastic.
+6. Spray the mixing bowl with olive oil, return the dough to the bowl. Turn over once or twice to get a coat.
+7. Cover with a tea towel and let rest. 
+8. After 30 mins - 1 hour, do a set of "stretch and fold" on the dough. Then let rest for another 30 min - 1 hour. After that the dough *can* be rolled out, though longer time to rise is better.
+
+When ready to make the pizza:
+
+9. Lightly flour the work surface and dump the dough out.
+10. Sprinkle a bit more flour on top, and/or lightly flour your hands. Then pat the dough out a bit.
+11. Roll out with a rolling pin. See Types of Crust below for several strategies here.
+
 
 
 
 **Variations:**
 
+- You can skip the oil if you want.
+- Less yeast = more rise time. 
+  - If you need the dough "quickly", this can be ready in about 1.5 - 2 hours. Just err on the side of more yeast (can probably go up to 3 tsp if you want).
+  - If you have more time / plan things in advance, using less yeast (or sourdough starter!) and starting the day before will give more time and flavor.
+  - Usually I'm lazy and use about 1 - 1.5 tsp yeast, and start the dough around noon if I want to make the pizza around 5:00pm or 6:00pm.
 
 
 **Notes:**
 
-- Nothing yet.
+- I use a silicone spatula for mixing and kneading the dough.
+  - The dough doesn't stick as much to that as it does to a wooden spoon or my fingers.
+  - To knead, I basically try to scoop a bit under the dough and fold it over itself.
+- Avocado oil works just as well. For baking I don't think it really matters.
 
 
+**Types of Crust**
+
+There are several crust types. The best is obviously Detroit style pizza. Second is probably New York style. 
+If you like Chicago style, well, that's your opinion. But opinions can be wrong, and yours is wrong.
+If you like [Altoona-style pizza](https://en.wikipedia.org/wiki/Altoona-style_pizza), then ~~I apologize but~~ I kindly request that you close this browser and never return to this webpage.
 
 
+Detroit-style
+
+- For the crust, the main characteristic is a thick, airy, chery crust, almost like focaccia. To accomplish this you need to let the dough rise again after rolling it out.
+- I'm a savage and don't have the proper dish, but I have a Lodge cast-iron baking sheet with nice edges. To make this, I do the following:
+  - Gently roll (so you don't pop all the air bubbles) the dough out on your work surface, then work with your hands and the rolling pin to stretch the dough a bit more to approximately the correct size.
+  - Put the dough into your baking pan, use a pizza slicer to chop off excess, so that the dough doesn't run up the edges (much). The excess can be used for garlic bread.
+  - Cover with a tea towel and let the dough rise for another 1-2 hours. You may want something to keep the towel from laying directly on the dough. I use a wire bread cooling rack.
+  - You can, and probably should, partially bake the dough before adding toppings. I'm usually lazy and don't do that.
+- The cheese should go to the edge of the pan, so that it gets a nice crust on it. This is the epitome of pizza. Enjoy.
+
+New York (maybe?) style
+
+- This tends to be more thin-crust from my experience. Roll the dough out, toss it on your baking sheet, add toppings, and bake it.
+- Ideally leave a little room at the edge to get a nice chewy crust. I haven't perfected that yet, so stay tuned. Maybe getting a pizza oven will help?
+- I'm not a New Yorker, so (1) Don't crucify me; and (2) If you have tips, let me know.
 
 
 

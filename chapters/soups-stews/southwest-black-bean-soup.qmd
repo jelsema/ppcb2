@@ -1,7 +1,7 @@
 
 
 ```{r}
-#| label: setup-chapter
+#| label: setup-soups-2
 #| results: false
 #| output: false
 
@@ -32,7 +32,7 @@ I tried to copy a store-made black bean soup that I liked. I think this is a sol
 
 
 ```{r}
-#| label: recipie-name
+#| label: southwest-black-bean-soup
 
 dat <- tibble(
   Ingredients = c(

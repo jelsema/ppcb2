@@ -31,13 +31,13 @@ book:
         - chapters/breakfast-sides/sausage-gravy.qmd
     - part: "Soups & Stews"
       chapters:
-        - chapters/soups-stews/southwest-black-bean-soup
-        - chapters/soups-stews/chicken-tortilla-soup
+        - chapters/soups-stews/chicken-tortilla-soup.qmd
+        - chapters/soups-stews/southwest-black-bean-soup.qmd
     - part: "Pizza"
       chapters:
-        - chapters/pizza/dough
-        - chapters/pizza/sauce
-        - chapters/pizza/garlic-bread
+        - chapters/pizza/dough.qmd
+        - chapters/pizza/sauce.qmd
+        - chapters/pizza/garlic-bread.qmd
 format:
   html:
     theme: 

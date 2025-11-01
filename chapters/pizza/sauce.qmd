@@ -1,0 +1,111 @@
+
+
+
+```{r}
+#| label: setup-pizza-2
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Pizza Sauce
+
+
+Spoiler alter: The pizza sauce is basically just tomato sauce with a bunch of “Italian” herbs added, plus some salt, garlic, and red pepper flakes.
+
+**Source:** Made this one up. Also vaguely remember some of the ingredients from when I worked at a pizzeria. I also remember the boss being cagey and glancing to make sure I wasn't trying to "steal" the recipe when I was working in the same room when he made the sauce. I wasn't ... but he also kept all the ingredients right there, and basically just dumped everything in a bowl and then I added that to the tomato sauce, so some of it was pretty obvious. He also drive a 1980s Mercedes limo around as his main car
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: pizza-sauce
+
+dat <- tibble(
+  Ingredients = c(
+    "8-10 oz tomato sauce",
+    "2 tsp oregano",
+    "1/2 tsp parsley",
+    "1 tsp garlic powder",
+    "1/2 tsp salt"
+  ),
+  ingrd2 = c(
+    "1/4 tsp onion powder",
+    "3/4 tsp rosemary",
+    "3/4 tsp basil",
+    "1/2 tsp black pepper",
+    "1/2 tsp red pepper flakes"
+  ),
+  Tools = c(
+    "Small bowl",
+    "Whisk or spoon",
+    "",
+    "",
+    ""
+  )
+)
+
+
+dat |> 
+  setNames( c("Ingredients", " ", "Tools") ) |> 
+  tt(  theme = "striped" ) |> 
+  style_tt( i=0, background=bgcol, color="white") # |> 
+  # style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Empty the tomato sauce into a bowl.
+2. Add the herbs and spices.
+3. Mix it well.
+
+
+
+
+
+**Variations:**
+
+- I think at least the first column of herbs and spices should be included. The second column is a bit less important.
+- The herb/spice amounts were largely just guessing how much we normally used. Adjusting them will not change too much. I would recommend not going light on the oregano, though.
+- If you want to make it thicker, add a small can of tomato paste as well. Though this will add volume, so you may want to put it in a pan and simmer it down a bit.
+- Some recipes I looked up (but didn’t really copycat) also included some olive oil. I sometimes spray the dough before putting the sauce on, so I might get the same effect there.
+
+
+
+**Notes:**
+
+- This amount is good for a pizza the size of a regular baking sheet.
+- It may help to mix everything and actually simmer it for a bit. I usually don’t.
+
+
+
+
+
+
+
+
+
