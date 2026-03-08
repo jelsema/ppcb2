@@ -44,15 +44,18 @@ dat <- tibble(
     "1 small jar salsa",
     "1 can diced tomatoes"
   ),
+  spcr1 = " ",
   Tools = c(
     "Slow cooker / pressure cooker"
   )
 )
 
 
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
 
 dat |> 
   tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
   style_tt( i=0, background=bgcol, color="white") # |> 
   # style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
   # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 

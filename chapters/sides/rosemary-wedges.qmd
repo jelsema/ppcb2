@@ -1,0 +1,93 @@
+
+
+```{r}
+#| label: setup-sides-rosemary-wedges
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Rosemary Potato Wedges
+
+Easy potato side dish.
+
+**Source:** I think it was a free recipe card that I somehow picked up from a grocery store.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: rosemary-wedges
+
+dat <- tibble(
+  Ingredients = c(
+    "4 baking potatoes",
+    "1/4 cup oil",
+    "1 tbsp salt",
+    "2 tbsp rosemary",
+    "1 tbsp red pepper flakes",
+    "1 tsp paprika"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Cutting board",
+    "Knife",
+    "tinfoil",
+    "Baking sheet",
+    "", ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") 
+
+
+```
+
+
+
+**Directions:**
+
+- Set oven to preheat at 450° F.
+- Cut each potato lengthwise into 6-8 wedges and place in the baking sheet.
+- Drizzle or spray the edges with oil, then sprinkle the herbs and spices over them.
+- Bake for 30-40 minutes or until potatoes are golden brown.
+
+**Variations:**
+
+- Add garlic powder. Does that need to be said?
+- Seasoning salt would probably be a suitable replacement for, well, all of the spices.
+
+**Notes:**
+
+- The spices and herbs are approximate. Just sprinkle how much you want.
+
+
+
+
+
+
+
+
+
+

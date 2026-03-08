@@ -46,6 +46,7 @@ dat <- tibble(
     "1/2 cup jalapeno (optional)",
     "1 1/2 cups brown rice (optional)"
   ),
+  spcr1 = " ",
   Spices = c(
     "2-4 cloves garlic",
     "1-2 tbsp ground cumin",
@@ -57,6 +58,7 @@ dat <- tibble(
     "Salt & black pepper to taste",
     ""
   ),
+  spcr2 = " ",
   Tools = c(
     "Large frying pan",
     "Blender",
@@ -71,9 +73,11 @@ dat <- tibble(
 )
 
 
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
 
 dat |> 
   tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
   style_tt( i=0, background=bgcol, color="white") # |> 
   # style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
   # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 

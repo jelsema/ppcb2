@@ -44,6 +44,7 @@ dat <- tibble(
     "1 tsp garlic powder",
     "1/2 tsp salt"
   ),
+  spcr1 = " ",
   ingrd2 = c(
     "1/4 tsp onion powder",
     "3/4 tsp rosemary",
@@ -51,6 +52,7 @@ dat <- tibble(
     "1/2 tsp black pepper",
     "1/2 tsp red pepper flakes"
   ),
+  spcr2 = " ",
   Tools = c(
     "Small bowl",
     "Whisk or spoon",
@@ -60,10 +62,12 @@ dat <- tibble(
   )
 )
 
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+colnames(dat)[str_detect(colnames(dat), "ingrd")] <- ""
 
 dat |> 
-  setNames( c("Ingredients", " ", "Tools") ) |> 
   tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
   style_tt( i=0, background=bgcol, color="white") # |> 
   # style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
   # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 

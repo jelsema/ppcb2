@@ -24,6 +24,7 @@ book:
         - chapters/breakfast-other/cinnamon-roll-biscuits.qmd
         - chapters/breakfast-other/huevos-rancheros.qmd
         - chapters/breakfast-other/quiche.qmd
+        - chapters/breakfast-other/green-chile-chedder-chorizo.qmd
     - part: "Breakfast Sides"
       chapters:
         - chapters/breakfast-sides/biscuits.qmd
@@ -38,6 +39,15 @@ book:
         - chapters/pizza/dough.qmd
         - chapters/pizza/sauce.qmd
         - chapters/pizza/garlic-bread.qmd
+    - part: "Appetizers"
+      chapters:
+        - chapters/appetizers/bacon-wrapped-dates.qmd
+        - chapters/appetizers/pimento-cheese.qmd
+    - part: "Sides"
+      chapters:
+        - chapters/sides/corn-bread.qmd
+        - chapters/sides/rosemary-wedges.qmd
+        - chapters/sides/fries.qmd
 format:
   html:
     theme: 

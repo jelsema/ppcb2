@@ -47,6 +47,7 @@ dat <- tibble(
     "3 tbsp oil",
     "2 tsp vanilla extract"
   ),
+  spcr1 = "",
   Tools = c(
     "Mixing bowl x2",
     "Whisk",
@@ -57,9 +58,11 @@ dat <- tibble(
   )
 )
 
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
 
 dat |> 
   tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
   style_tt( i=0, background=bgcol, color="white") 
 
 

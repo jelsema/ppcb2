@@ -1,0 +1,98 @@
+
+
+```{r}
+#| label: setup-sides-cornbread
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Cornbread
+
+Another southern staple: corn bread. It’s just good.
+
+**Source:** The back of the package of Indian Head corn meal.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: cornbread
+
+dat <- tibble(
+  Ingredients = c(
+    "1 cup yellow cornmeal",
+    "1 cup flour",
+    "1/2 cup sugar",
+    "3 tsp baking powder",
+    "1 tsp salt",
+    "2/3 cup milk",
+    "2 eggs",
+    "1/2 cup oil"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Cast iron skillet",
+    "Mixer",
+    "Two bowls",
+    "Whisk",
+    rep( "", 4 )
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") 
+
+
+```
+
+
+
+**Directions:**
+
+1. Set oven to preheat at 400° F. degrees.
+2. Mix the dry ingredients in a mixing bowl.
+3. In separate bowl, mix the wet ingredients. Otherwise it’s a pain to full whip the eggs.
+4. Combine and mix well.
+5. Pour into skillet and bake for 15 - 20 minutes, or until golden brown.
+
+**Variations:**
+
+- You can replace some/all the sugar with honey, which is pretty bomb. I think I swapped out on an equal-volume basis, and microwaved hte honey slightly so it would be easier to pour out of the measuring cup.
+- Adding bacon bits and green chile (mixed into the batter) is great. If you don’t have proper green chile available, you can use jalapeño like a peasant.
+
+**Notes:**
+
+- I like the Indian Head cornmeal. And since I got the recipe from their package, I think it’s only fair to recommend them for this.
+- The top may crack during cooking. That’s fine. It’s good for the cornbread to be soft and moist, but you do want it fully cooked. Using a toothpick test is probably a good idea.
+
+
+
+
+
+
+
+
+
+
+

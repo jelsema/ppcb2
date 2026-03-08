@@ -1,0 +1,110 @@
+
+
+```{r}
+#| label: setup-appetizers-pimento-cheese
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Pimento Cheese
+
+
+I don’t recall when I first encountered this, I think it was when I lived in North Carolina. It’s pretty awesome and versatile. I’ve used it as an appetizer with chips/crackers, put it on a roll, and make a grilled cheese with it. This is a dairy-free recipe (optionally vegan), but that makes the ingredient list a bit verbose, so I’ll list some options below.
+
+
+**Source:** [AllRecipes](https://www.allrecipes.com/recipe/189930/southern-pimento-cheese/), but I modified it to be dairy-free.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: pimento-cheese
+
+dat <- tibble(
+  Ingredients = c(
+    "8 oz cream cheese",
+    "1/2 cup mayonnaise",
+    "2 cups shredded cheddar cheese",
+    "1/4 tsp onion powder"
+  ),
+  spcr1 = "",
+  ingrd2 = c(
+    "1/4 tsp garlic powder",
+    "1/4 tsp paprika",
+    "4 oz diced pimentos, drained",
+    "Salt and pepper to taste"
+  )
+)
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+colnames(dat)[str_detect(colnames(dat), "ingrd")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") # |> 
+  # style_tt( i=5, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Mix the cream cheese and mayonnaise together. This might take a while to get the cream cheese smoothed out.
+2. Once the cream cheese and mayonnaise start to come together, add in the spices and continue mixing. Then add in the pimentos and continue mixing.
+3. Add the cheddar cheese shreds and mix well.
+4. Store in sealed container, seems to last pretty well. Might just be because pimento cheese is delicious and doesn’t last that long.
+
+
+
+
+**Variations:**
+
+- Some of the following can be added to tweak the recipie slightly:
+
+  - Bacon bits (smoked is better)
+  - 1/4 tsp ground cayenne pepper
+  - 1 jalapeño pepper, de-seeded and minced
+  - I haven’t tried it yet, but adding some green chile would probably be good as well.
+
+- If you use Miracle Whip instead of mayonnaise, you may want to add white vinegar. I forget the amount, maybe 1/4 cup or so? This helps mellow out the sweetness of the Miracle Whip, but does change the texture of the cheese to be a little bit more runny. Just use Duke’s mayo. Why don’t you have that stuff on hand anyway?
+
+
+**Notes:**
+
+- As noted, this can be easily dairy-free, which is how I usually make it. Our typical choices are:
+  - Daiya for the shredded chedder cheese.
+  - Violife for the cream cheese.
+
+
+
+
+
+
+
+
+
+

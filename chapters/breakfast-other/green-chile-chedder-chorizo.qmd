@@ -1,0 +1,129 @@
+
+
+```{r}
+#| label: setup-breakfast-other-gccc
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Green Chile & Cheese Chorizo Biscuits
+
+<!----- ![](../../images/cinnamon_biscuits.jpg)  ----->
+
+A local restaurant has green chile cheddar biscuits. I figured I could make them myself, and then make "sausage" patties out of chorizo as a southwest variation of sausage biscuits. Turned out quite good. 
+Since the biscuit recipe is modified a bit, I thought a separate page would be helpful. 
+
+**Source:** Just adapted the biscuit recipie.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: green-chile-cheddar-chorizo-biscuits
+
+dat <- tibble(
+  Dough = c(
+    "1 cup milk",
+    "1 tbsp apple cider vinegar",
+    "290 g flour (~2 cups)",
+    "1 tbsp baking power",
+    "1/2 tsp baking soda",
+    "1 tsp salt",
+    "4 tbsp butter"
+  ),
+  spcr1 = " ",
+  Extra = c(
+    "1/2 - 3/4 lbs ground chorizo",
+    "2-4 eggs (optional)",
+    "1/4 - 3/4 cup green chile",
+    "1/2 - 3/4 cup shredded cheese",
+    rep("",3)
+  ),
+  spcr2 = " ",
+  Tools = c(
+    "Mixing bowls",
+    "Mixing spoon",
+    "Knife/dough scraper",
+    "Cast iron skillet",
+    "I didn't keep track of everything",
+    "This is all free, stop complaining",
+    "And it's ad-free"
+  )
+)
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") |> 
+  style_tt( i=3, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+Biscuits
+
+1. Preheat the oven to 450° F.
+2. Start the dough from the biscuit recipe.
+3. Add the liquid for the dough and start mixing until it comes together.
+3. Before dumping the dough out to fold and form biscuits, add the green chile and shredded cheese to the batter and mix it in (see notes). Then continue with the biscuit recipie.
+
+Chorizo patties
+
+- Sausage patties are often come in a 12 oz pack with 8 patties (1.5 oz each). I've found chorizo a bit harder to work, so I'd probably target about 2 oz per patty. 
+- If you're using a 1 lb package of chorizo, this would let you get one chorizo patty for each biscuit, if you're making 8 (which makes two biscuits for two people for two days).
+- I recommend using latex gloves to form the patties, otherwise it gets very messy.
+- Try to make the patties very flat. When cooking them, they tend to get thicker but narrower across.
+
+Eggs
+
+- Who wouldn't want a fried egg on top of this as well?
+- Probably a slice of cheese too, like pepperjack.
+
+
+**Variations:**
+
+- I guess you can just eat these by themselves, you don't really need to make chorizo patties. I won't judge you for that.
+
+
+**Notes:**
+
+- I have measurements listed for green chile and shredded cheese, but I've never really measured these. I just use a couple of big spoonfulls of green chile, and however much cheese I feel like.
+- I ususally use a Mexican blend. For vegan needs, Daiya has a Mexican blend that works great.
+- The dough tends to be much more wet and sticky than with the regular biscuits, even if the green chile doesn't have too much liquid in it. I still haven't worked out exactly how much to reduce the buttermilk.
+
+
+
+
+
+
+
+
+
+

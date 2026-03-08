@@ -1,0 +1,97 @@
+
+
+```{r}
+#| label: setup-sides-fries
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Chicken Tortilla Soup
+
+This is very easy to make, and I really enjoy it.
+
+**Source:** From a former colleague.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: fries
+
+dat <- tibble(
+  Ingredients = c(
+    "2 - 3 potatoes",
+    "2-3 tbsp high-heat oil",
+    "Spices to taste"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Kitchen knife",
+    "Mixing bowl",
+    "Air fryer"
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+1. Wash the potatoes off.
+2. Slice them into fry-shape.
+  - I usually start by slicing one edge on the longest side I can find, so that the potatoe will lay flat.
+  - Then work along the width of the potato, making slices 1/8 - 1/4 inch thick.
+  - Flip 2 or 3 of the slices flat, and slice 1/8 - 1/4 inch thick strips.
+3. Place the strips into a mixing bowl and pour the oil over them. Stir them around so that the oil coats them nicely.
+4. Add whatever spices you like.
+5. Put them in an air fryer at 420° F - 450° F for 18-20 minutes. You'll want to stir them up at least once during this.
+  - If you're using a regular oven, probably something similar. I haven't done it, but I imagine it should work.
+
+
+**Variations:**
+
+- Mostly variations of the spices. I like seasoned salt. Though just salt and pepper is also good.
+- Probably adding some garlic, parsley, and/or rosemary would be good.
+
+
+**Notes:**
+
+- For the oil, I usually use avocado oil.
+
+
+
+
+
+
+
+
+
+
+
+

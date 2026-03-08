@@ -46,6 +46,7 @@ dat <- tibble(
     "1 tsp salt",
     "4 tbsp butter"
   ),
+  spcr1 = " ",
   Tools = c(
     "Mixing bowl",
     "Measuring cups",
@@ -57,9 +58,11 @@ dat <- tibble(
   )
 )
 
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
 
 dat |> 
   tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
   style_tt( i=0, background=bgcol, color="white") # |> 
   # style_tt( i=5, j=2, background=bgcol, color="white", bold=TRUE )
   # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
@@ -81,10 +84,11 @@ dat |>
 4. Cut the butter (if you used sticks, which I suggest) into small chunks and mix it in with the flour. One of those butter-chopper things is great. Otherwise use your fingers, which isn't great.
 5. Pour in the “buttermilk” mixture. Stir until just slightly combined, the dough will be very sticky.
 6. Dump it out onto floured surface, dust the top with some flour, and fold the dough over itself a few times (4-6 should be fine). This is NOT kneading the dough. You’ll probably want to dust your hands with flour now and again. Or the dough scraper works well for this. Just try to handle the dough as little as possible. Otherwise you lose fluffiness and biscuits become more hard (I think).
-7. Form the dough into a rough square/disk approximately 3/4 - 1 inch thick. Use a dough cutter, knife, or cookie cutter to cut out the biscuits. Place them in greased skillet. They can touch slightly.
-7. Brush tops and sides of the biscuits with melted butter (another 1/2 - 1 tbsp).
-8. Bake for 15-20 minutes, until the biscuits are fluffy and turning golden brown.
-9. Eat those bad boys while they’re warm!
+7. Form the dough into a rough square/disk approximately 3/4 - 1 inch thick. Use a dough cutter, knife, or cookie cutter to cut out the biscuits. I usually target 8 biscuits.
+8. Place them in greased skillet. They can touch slightly.
+9. Brush tops and sides of the biscuits with melted butter (another 1/2 - 1 tbsp).
+10. Bake for 15-20 minutes, until the biscuits are fluffy and turning golden brown.
+11. Eat those bad boys while they’re warm!
 
 
 
@@ -94,10 +98,10 @@ dat |>
 I mean, it's biscuits, use them how you would otherwise. Some suggestions:
 
 - Of course, biscuits and sausage gravy is phenomenal.
+- Pimento cheese biscuit sandwiches.
 - Cinnamon roll biscuits are pretty great I actually like them better than “ordinary” cinnamon rolls.
 - They work perfectly for biscuit sandwiches. Make these, fry up some sausage patties (or small strips of bacon). Throw a fried egg and some cheese on there. Some mayonnaise or mustard too if you like.
-- Pimento cheese biscuit sandwiches.
-
+- A southwestern spin on the sausage biscuit: Green chile cheese biscuits with chorizo patties.
 
 
 **Notes:**

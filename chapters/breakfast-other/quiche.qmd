@@ -1,7 +1,7 @@
 
 
 ```{r}
-#| label: setup-breakfast-other-5
+#| label: setup-breakfast-other-quiche
 #| results: false
 #| output: false
 
@@ -47,6 +47,7 @@ dat <- tibble(
     "",
     ""
   ),
+  spcr1 = "",
   Filling = c(
     "4-6 eggs",
     "1 - 1 1/4 cup milk",
@@ -55,6 +56,7 @@ dat <- tibble(
     "",
     ""
   ),
+  spcr2 = "",
   Tools = c(
     "Bowl for mixing (x2?)",
     "Mat/board for dough",
@@ -65,9 +67,11 @@ dat <- tibble(
   )
 )
 
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
 
 dat |> 
   tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
   style_tt( i=0, background=bgcol, color="white") # |> 
   # style_tt( i=5, j=2, background=bgcol, color="white", bold=TRUE )
   # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
@@ -126,6 +130,7 @@ As the crust is baking, prepare the filling.
 
 - This works pretty well with the JUST Egg. To do this, replace the eggs and milk with:
   - 1 carton of liquid JUST Egg (16 oz)
+  - Optionally, 1/3 - 2/3 cup milk.
   - 2 tsp baking powder
   - 1.5 - 2 tbsp flour
   - If you have it, some black lava salt (8-12 shakes)
@@ -143,7 +148,7 @@ As the crust is baking, prepare the filling.
 
 **Notes:**
 
-- Alton Brown’s recipie called for 2 eggs. I’m not sure why I use more, my pie dish may have been slightly larger.
+- Alton Brown’s recipe called for 2 eggs. I’m not sure why I use more, my pie dish may have been slightly larger.
 - I’m not sold on the sugar in the crust. That came from the recipe on the pie dish. Maybe for a sweet pie it’s better, but for a savory pie I think it might be preferable to note have sugar.
 
 
