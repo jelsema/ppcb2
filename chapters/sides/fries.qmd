@@ -21,7 +21,7 @@ bgcol <- "skyblue4"
 
 
 
-## Chicken Tortilla Soup
+## Fries
 
 This is very easy to make, and I really enjoy it.
 
@@ -65,9 +65,11 @@ dat |>
 
 1. Wash the potatoes off.
 2. Slice them into fry-shape.
-  - I usually start by slicing one edge on the longest side I can find, so that the potatoe will lay flat.
+
+  - I usually start by slicing one edge on the longest side I can find, so that the potato will lay flat.
   - Then work along the width of the potato, making slices 1/8 - 1/4 inch thick.
   - Flip 2 or 3 of the slices flat, and slice 1/8 - 1/4 inch thick strips.
+
 3. Place the strips into a mixing bowl and pour the oil over them. Stir them around so that the oil coats them nicely.
 4. Add whatever spices you like.
 5. Put them in an air fryer at 420° F - 450° F for 18-20 minutes. You'll want to stir them up at least once during this.

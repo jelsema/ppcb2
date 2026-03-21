@@ -1,0 +1,104 @@
+
+
+```{r}
+#| label: setup-southwest-vinaigrette
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Southwest vinaigrette
+
+I rather like the salad dressing from Chipotle. I looked around and found a couple of recipes to imitate it. This isn’t really the same, but close enough.
+
+**Source:** I’ve looked at [OnceUponAChef](https://www.onceuponachef.com/recipes/copycat-recipe-chipotle-mexican-grills-chipotle-honey-vinaigrette.html) and [GimmeSomeOven](https://www.gimmesomeoven.com/honey-chipotle-salad-dressing/)
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: southwest-vinaigrette
+
+
+dat <- tibble(
+  Ingredients = c(
+    "3/8 cup red wine vinegar",
+    "3/8 cup apple cider vinegar",
+    "3/4 cup olive oil",
+    "2 tbsp honey",
+    "2 chipotle peppers in adobo sauce",
+    "2 cloves garlic (or equivalent minced)",
+    "1/2 tsp salt"
+  ),
+  spcr1 = " ",
+  More = c(
+    "1/2 tsp black pepper",
+    "1/2 tsp oregano",
+    "",
+    "",
+    "Tools",
+    "Blender",
+    "Dressing container"
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+colnames(dat)[3] <- "Additional Ingredients"
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") |> 
+  style_tt( i=5, j=3, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+
+```
+
+
+
+**Directions:**
+
+1. Measure out the oil, vinegar, and honey into the blender.
+2. Add the chipotle peppers with some of their sauce.
+3. Use several short pulses to blend well.
+4. Pour it into your dressing container, and it’s ready to use.
+
+**Variations:**
+
+- If you look at the original recipes, I’ve doubled the vinegar. As I said before, I like dressing a bit runnier, and those recipes just had too much oil for me, so the dressing had a higher viscosity.
+- This dressing isn’t just for salads. I’ve put it on quesadillas, omlettes, and other breakfast sandwiches as well.
+
+**Notes:**
+
+- I use this [OXO container](https://www.oxo.com/salad-dressing-shaker.html?color=Black), or at least something very much like it. 
+- Since this recipe has the chipotle peppers, I keep it in the fridge. It may congeal after a little bit, but a 5-10 seconds in the microwave solves that.
+
+
+
+
+
+
+
+

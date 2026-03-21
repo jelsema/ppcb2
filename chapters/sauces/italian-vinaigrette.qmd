@@ -1,0 +1,105 @@
+
+
+```{r}
+#| label: setup-italian-vinegar
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Italian vinaigrette
+
+I like the oil and vinegar type dressings more than things like Thousand Island or Ranch. Is this really an “Italian” vinaigrette? I don’t know. Do I really care? Not in the slightest.
+
+**Source:** Lost to the ages. Sorry.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: italian-vinaigrette
+
+dat <- tibble(
+  Ingredients = c(
+    "1 1/8 cup olive oil",
+    "1/2 cup apple cider vinegar",
+    "1/4 cup balsamic vinegar",
+    "1/2 tsp salt",
+    "1/2 tsp black pepper",
+    "1/2 tsp garlic powder",
+    "1/2 tsp oregano"
+  ),
+  spcr1 = " ",
+  Spices = c(
+    "1/2 tsp parsley",
+    "1/2 tsp rosemary",
+    "1/2 tsp basil",
+    "1/2 tsp thyme",
+    "Tools",
+    "Blender",
+    "Dressing container"
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+colnames(dat)[3] <- "Additional Ingredients"
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") |> 
+  style_tt( i=5, j=3, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Measure the oil and vinegar into the blender.
+2. Add the dry spices.
+3. Blend it up to immerse. I tend to use several short pulses, rather than one cycle. It probably doesn’t matter.
+4. Pour it into your dressing container, and it’s ready to use.
+
+**Variations:**
+
+- You don’t need to use all of the spices. I think the ingredients in the left column are a good base, the rest just add a little bit more. You want to change it up a bit? Have at it.
+- Too much balsamic vinegar and your dressing may get a little clumpy at some point. Not a major problem, but something to be aware of. I normally don’t go more than 3/8 cup balsamic.
+- Switching red wine vinegar for the balsamic gives a bit of a sweeter taste.
+- We sometimes add some paprika.
+
+
+**Notes:**
+
+- I use this [OXO container](https://www.oxo.com/salad-dressing-shaker.html?color=Black), or at least something very much like it. 
+- This dressing does not need to be kept in the fridge. Probably. I go through it quickly enough that it’s never been a problem. If you do put it in the fridge, the oil will probably congeal. You’ll need to let it warm up, or put it in the microwave for a few seconds to make it liquid again.
+
+
+
+
+
+
+
+

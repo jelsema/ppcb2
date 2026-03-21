@@ -46,7 +46,8 @@ dat <- tibble(
   ),
   spcr1 = " ",
   Tools = c(
-    "Slow cooker / pressure cooker"
+    "Slow cooker / pressure cooker",
+    rep("",6)
   )
 )
 

@@ -1,0 +1,92 @@
+
+
+```{r}
+#| label: setup-avocado-pudding
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Avocado pudding
+
+This stuff tastes good, and you can pretend your being healthy.
+
+**Source:** Source: I think a friend posted it on Facebook and I looked it up once. May have been from [TheKitchn](https://www.thekitchn.com/how-to-make-the-best-chocolate-avocado-pudding-239245).
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: avocado-pudding
+
+dat <- tibble(
+  Ingredients = c(
+    "1 ripe avocado",
+    "1-2 tsp cocoa powder",
+    "1 tsp honey"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Bowl for mixing",
+    "Fork and/or spoon",
+    ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+1. Do what you do to get the meat of the avocado out. I usually slice it in quarters to be able to peel the skin off.
+2. You may want to cut it up as much as possible with a knfe.
+3. Start mashing it. This is 95% of the work. Get it to a very smooth consistency. You might have other tools to do this better, I don’t.
+4. Mix in the cocoa powder and honey. Once it’s mixed in well, take a sample. Add more cocoa powder and honey as desired.
+
+
+**Variations:**
+
+- Adding a bit of cinnamon might give this a Mexican chocolate taste. I haven’t tried it yet, but now I want to.
+
+
+**Notes:**
+
+- The avocado really needs to be ripe. You want to make sure it gets really mashed up, no chunks.
+- The measurements are approximate, I usually go towards the high end, or maybe even a bit more.
+
+
+
+
+
+
+
+
+
+
+
+

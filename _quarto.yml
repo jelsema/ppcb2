@@ -48,6 +48,18 @@ book:
         - chapters/sides/corn-bread.qmd
         - chapters/sides/rosemary-wedges.qmd
         - chapters/sides/fries.qmd
+    - part: "Sauces and Dressings"
+      chapters:
+        - chapters/sauces/north-carolina-vinegar-sauce.qmd
+        - chapters/sauces/green-chile-vinaigrette.qmd
+        - chapters/sauces/italian-vinaigrette.qmd
+        - chapters/sauces/southwest-vinaigrette.qmd
+    - part: "Desserts"
+      chapters:
+        - chapters/desserts/avocado-pudding.qmd
+        - chapters/desserts/dairy-free-cool-whip.qmd
+        - chapters/desserts/salted-chocolate-peanut-butter-cups.qmd
+        - chapters/desserts/skillet-cookie.qmd
 format:
   html:
     theme: 

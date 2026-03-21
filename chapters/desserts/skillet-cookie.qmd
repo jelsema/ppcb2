@@ -1,0 +1,109 @@
+
+
+```{r}
+#| label: setup-skillet-cookie
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Skillet Cookie
+
+It’s just a cookie, but lazier and better.
+
+
+**Source:** Use [TheKitchn](https://damndelicious.net/2013/05/19/brown-butter-chocolate-chip-cookie-skillet-pizookie/) as an inspiration, but with some modifications.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: skillet-cookie
+
+dat <- tibble(
+  Ingredients = c(
+    "1 3/4 cup AP flour",
+    "1/2 tsp baking soda",
+    "1/2 tsp salt",
+    "14 tsp butter (4-5 tbsp)",
+    "1/3 cup sugar",
+    "1/2 cup dark brown sugar",
+    "2 tsp vanilla extract",
+    "2 eggs"
+  ),
+  spcr1 = " ",
+  Fillings = c(
+    "As desired, some options",
+    "1 cup chocolate chips",
+    "1 cup chopped pecans",
+    "1 cup macademia nuts",
+    "","","",""
+  ),
+  spcr2 = " ",
+  Tools = c(
+    "Browl for mixing",
+    "Cast iron skillet",
+    "","","","","",""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+1. Preheat over to 375$^{\circ}$.
+2. Combine flour, baking soda, and salt in mixing bowl.
+3. Melt the butter and combine with sugars, vanilla, and egg.
+4. Add to the dry ingredients and let it mix.
+5. Dump the dough into the skillet and stick it in the oven.
+6. Bake for 12-15 minutes. May need to adjust this based on your oven, altitude, and how solid or gooey you want the cookie to be.
+
+
+**Variations:**
+
+- The fillings are, of course, up to you.
+- You probably want to target 1 - 1.5 cups for the total fillings. Too much and it starts to loose the “cookieness”
+
+
+**Notes:**
+
+- When I say “butter”, you can use dairy-free butter.
+- We generally use coconut sugar, which is more akin to a light brown sugar.
+- For eggs, you can use JUST Egg, or probably also a powdered egg replacer.
+
+
+
+
+
+
+
+
+
+
+

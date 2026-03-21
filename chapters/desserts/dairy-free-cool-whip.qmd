@@ -1,0 +1,95 @@
+
+
+```{r}
+#| label: setup-dairy-free-cool-whip
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Dairy-free Cool Whip
+
+So, not really a dessert, but something that’s used with a lot of desserts. And non-dairy cool whip is really easy: Heavy whipping cream, a whisk, and powdered sugar to taste. This is a bit more involved.
+
+**Source:** Lost to the ages. But I know that I added a lot more Xantham gum than the original.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: dairy-free-cool-whip
+
+dat <- tibble(
+  Ingredients = c(
+    "1 cup milk",
+    "1 cup safflower oil",
+    "2 tbsp powdered sugar",
+    "1 tsp vanilla extract",
+    "3/4 tsp xantham gum"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Blender",
+    "Spatula",
+    "", "", ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+1. Mix all of the ingredients together and blend until the mixture reaches desired consistency.
+2. Seriously, that’s it. If it’s a bit too runny, add more xantham gum. I suggest 1/4 tsp increments.
+3. Refrigerate for 30+ minutes before using.
+
+
+**Variations:**
+
+- Adjust the sweetness with more or less powdered sugar.
+- Using vanilla almond milk here would probably go over well.
+- If you don’t have safflower oil, just use any mild-tasting oil. It’s there for the fat/body, not for the taste.
+- You could make this lower calorie by using something like Lakanto's monkfruit powdered sugar.
+
+**Notes:**
+
+- Don’t expect this to be just like store-bought whipped cream, or whipped cream made from heavy whipping cream. It’s less fluffy and more runny.
+- To make it less runny, use more xantham gum (this recipe has already tripled the amount from the source recipe).
+- If you let it sit for too long, you may need to blend it again.
+
+
+
+
+
+
+
+
+
+
+

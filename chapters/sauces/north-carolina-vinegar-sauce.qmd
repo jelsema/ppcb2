@@ -1,0 +1,103 @@
+
+
+```{r}
+#| label: setup-north-carolina-vinegar
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## North Carolina vinegar sauce
+
+For pulled pork (well, smoked at least, but why wouldn’t you smoke it?), I don’t think anything beats the vinegar style sauce from North Carolina. There are a lot of small variations (some would complain about the ketchup in this recipe).
+
+
+**Source:** I think I got this from [MeatWave](https://meatwave.com/recipes/barbecue-sauce-recipe-north-carolina-vinegar-sauce).
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: north-carolina-vinegar
+
+dat <- tibble(
+  Ingredients = c(
+    "3 cupls apple cider vinegar",
+    "3 tbsp dark brown sugar",
+    "1 1/2 tbsp ketchup",
+    "1 1/2 tbsp Texas Pete hot sauce",
+    "1 1/2 tsp red pepper flakes",
+    "1 1/2 tsp black pepper",
+    "1 1/2 tsp salt"
+  ),
+  spcr1 = " ",
+  Spices = c(
+    "Pot",
+    "Whisk",
+    "Dressing container",
+    "",
+    "",
+    "",
+    ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") # |> 
+  # style_tt( i=4, j=2, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+```
+
+
+
+**Directions:**
+
+1. Put the ingredients into the pot.
+2. Bring to a boil. Whisk regularly until the sugar and salt are dissolved.
+3. Remove from heat and allow to cool.
+
+**Variations:**
+
+- Boiling longer seems to reduce the tartness a bit. I think. Might just be in my head. It will also thicken the sauce slightly (not much).
+- Adjust the hotness by varying the amount of Texas Pete (or other tabasco sauce if you’re a savage), or red pepper flakes.
+
+
+**Notes:**
+
+- I use this [OXO container](https://www.oxo.com/salad-dressing-shaker.html?color=Black), or at least something very much like it. 
+- Add some more Texas Pete and red pepper flakes by 50% for the recipe if you want it to be hotter. I’d start with another 50% of each.
+- Coconut sugar can be used in place of brown sugar in a pinch.
+
+
+
+
+
+
+
+
