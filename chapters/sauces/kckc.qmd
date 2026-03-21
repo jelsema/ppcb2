@@ -1,0 +1,103 @@
+
+
+```{r}
+#| label: setup-kckc
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## KCKC
+
+This is a tomato-based BBQ sauce that may be more familiar. I think it’s in the Kansas City style.
+
+**Source:** Based on “Sweet and Mild Barbecue Sauce” from Paul Kirk’s Championship Barbecue book. But I made some changes along the way.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: kckc
+
+
+dat <- tibble(
+  Ingredients = c(
+    "2 1/2 cups ketchip",
+    "3/8 cup brown sugar",
+    "1 cup apple cider vinegar",
+    "1/2 cup Worchestershire sauce",
+    "1/4 cup olive oil",
+    "1 - 1 1/2 tsp salt",
+    "1 tsp black pepper",
+    "1/2 tsp red pepper flakes"
+  ),
+  spcr1 = " ",
+  More = c(
+    "1/2 tsp paprika",
+    "1/2 tsp chipotle chile powder",
+    "1 tsp garlic powder",
+    "",
+    "Tools",
+    "Saucepan",
+    "Spoon or whisk",
+    "Jar(s)"
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+colnames(dat)[3] <- "Additional Ingredients"
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") |> 
+  style_tt( i=5, j=3, background=bgcol, color="white", bold=TRUE )
+  # style_tt( i=0, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=1, line = "t", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=8, line = "b", line_color="black", line_width = tlwd) |> 
+  # style_tt( i=4, j=2, line = "t", line_color="black", line_width = tlwd )  |> 
+  # style_tt( i=4, j=2, line = "b", line_color="black", line_width = tlwd )  |> 
+
+
+
+```
+
+
+
+**Directions:**
+
+1. Put the ingredients into the saucepan on low/medium heat.
+2. Mix it up and bring to a simmer.
+3. Remove from heat and allow to cool.
+
+**Variations:**
+
+- I’ve only made this once, still working on variations.
+
+**Notes:**
+
+- I may tinker with this recipe. Perhaps less ketchup and some other thickener. Probably more Worcestershire sauce. The goal would be to get a consistency that is neither watery like the vinegar sauce, but not a paste like Sweet Baby Ray’s, while also making it a bit less basic tomato/ketchup-tasting. Maybe some Gaur Gum would help thicken with less ketchup? Or more Worchestershire sauce, or add some vinegar?
+
+
+
+
+
+
+
+

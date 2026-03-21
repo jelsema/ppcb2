@@ -1,0 +1,104 @@
+
+
+```{r}
+#| label: setup-pretzel-rolls
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Pretzel Rolls
+
+I think these are delicious, but they are a mess to make, so I don’t make them often.
+
+
+**Source:** 
+A site called DairyFreeCooking, but the page didn't work last I looked.
+
+**Ingredients:**
+
+
+```{r}
+#| label: pretzel-rolls
+#| eval: true
+
+dat <- tibble(
+  Ingredients = c(
+    "235g warm water (1 cup)",
+    "2 1/2 tsp yeast",
+    "4g1/4 cup sugar",
+    "1 tsp salt",
+    "400g flour",
+    "7 cups water",
+    "1/2 cup baking soda"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Bowl for mixing",
+    "Big pot",
+    "Spoon with slots", 
+    "",
+    "",
+    "",
+    ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+- If needed, activate the yeast: Add yeast (and some sugar) to warm water (100$^{\circ}$ - 110$^{\circ}$ F) and allow to sit for approximately 5 minutes. The yeast should start to bubble a bit.
+- Add sugar, salt, then add flour and mix until the dough comes together. Let it rise until doubled in bulk.
+- Preheat oven to 400$^{\circ}$, cover baking sheet with tinfoil and grease it.
+- Bring the 7 cups of water, with baking soda, to a boil.
+- Cut the dough into chunks (to suit desired size). Shape them into balls, trying to develop surface tension, and drop them into the boiling water 1-2 at a time. Leave them in the water for approximately 1 minute, then use the spoons to remove and place them on the baking sheet.
+- Cut a cross in the balls if desired (carefully) to help them rise.
+- Sprinkle with coarse salt.
+- Bake for 12-15 minutes, until dough browns.
+
+**Variations:**
+
+- I’ve read you can use lye instead of baking soda, but that it’s a bit more violent reaction, so be careful.
+
+**Notes:**
+
+- You may want/need to flip the dough balls after dropping them into the boiling water.
+- I suggest making slightly larger pretzel rolls. While pretzel bites are pretty phenomenal, it’s really annoying to make and boil a lot of small pretzel bites.
+- Be prepared for a lot of cleanup.
+
+
+
+
+
+
+
+
+
+
+

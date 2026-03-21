@@ -1,0 +1,97 @@
+
+
+```{r}
+#| label: setup-irish-soda-bread
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Irish Soda Bread
+
+This is a fairly easy loaf to make, and turns out great. It’s great as an appetizer, or as a side in place of rolls.
+
+
+**Source:** 
+[NYT](https://cooking.nytimes.com/recipes/1015683-traditional-irish-soda-bread), though
+[KingArthurFlour](https://www.kingarthurbaking.com/recipes/artisan-bread-bowls-recipe) also has one, and I usually like their recipes.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: irish-soda-bread
+#| eval: true
+
+dat <- tibble(
+  Ingredients = c(
+    "450g white flour",
+    "3g salt",
+    "4g baking soda",
+    "1 1/2 cup milk",
+    "1 1/2 tbsp apple cider vinegar"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Bowl for mixing",
+    "Baking sheet",
+    "", 
+    "",
+    ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+- Preheat oven to 450$^{\circ}$ F.
+- Mix the milk and apple cider vinegar together, set aside (this is a buttermilk alternative).
+- Mix dry ingredients together. Make a well in the middle, add the buttermilk, and carefully mix. The original recipe says to mix by hand, which is super annoying, but probably helps over-mixing. This is analogous to biscuits, you don’t want to over-work the dough. I’d still probably use a big spoon instead.
+- Form the dough into a round disk about 1.5 inches thick and put on a baking sheet. Make a deep cross (two slashes) to help loaf’s ability to rise.
+- Bake for 15 minutes, reduce temperature to 400, and bake another 30-45 minutes, until top is golden brown and bottom sounds hollow when knocked.
+
+**Variations:**
+
+- TBD. Probably none.
+
+**Notes:**
+
+- If being diary-free is no concern, you can use regular buttermilk.
+
+
+
+
+
+
+
+
+
+
+

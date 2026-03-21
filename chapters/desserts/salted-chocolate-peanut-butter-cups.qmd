@@ -23,6 +23,9 @@ bgcol <- "skyblue4"
 
 ## Salted Caramel Peanut Butter Cups
 
+![](../../images/dark_chocolate_pb_cups.jpg)
+
+
 These are a dairy-free peanut butter cup, and holy crap are they good.
 
 

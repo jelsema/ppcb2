@@ -43,12 +43,13 @@ book:
       chapters:
         - chapters/appetizers/bacon-wrapped-dates.qmd
         - chapters/appetizers/pimento-cheese.qmd
-    - part: "Sides"
+    - part: "Sides & Salsas"
       chapters:
         - chapters/sides/corn-bread.qmd
         - chapters/sides/rosemary-wedges.qmd
         - chapters/sides/fries.qmd
-    - part: "Sauces and Dressings"
+        - chapters/sides/black-bean-corn-salsa.qmd
+    - part: "Sauces & Dressings"
       chapters:
         - chapters/sauces/north-carolina-vinegar-sauce.qmd
         - chapters/sauces/green-chile-vinaigrette.qmd
@@ -60,6 +61,13 @@ book:
         - chapters/desserts/dairy-free-cool-whip.qmd
         - chapters/desserts/salted-chocolate-peanut-butter-cups.qmd
         - chapters/desserts/skillet-cookie.qmd
+    - part: "Breads"
+      chapters:
+        - chapters/bread/bread-bowls.qmd
+        - chapters/bread/focaccia.qmd
+        - chapters/bread/irish-soda-bread.qmd
+        - chapters/bread/pasta-noodles.qmd
+        - chapters/bread/pretzel-rolls.qmd
 format:
   html:
     theme: 

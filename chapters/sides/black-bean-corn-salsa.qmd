@@ -1,0 +1,95 @@
+
+
+```{r}
+#| label: setup-black-bean-corn-salsa
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Black Bean and Corn Salsa
+
+This is a mild salsa, though you can probably add some peppers or chile.
+
+**Source:** I think an aunt told me about it.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: black-bean-corn-salsa
+
+dat <- tibble(
+  Ingredients = c(
+    "1 can black beans",
+    "1 can corn",
+    "1 red/green pepper",
+    "Feta cheese",
+    "Cilantro (optional)",
+    "1/4 - 1/2 cup Onion (optional)"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Bowl",
+    "Can opener",
+    "Spoon",
+    "Knife",
+    "Cutting board", 
+    ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white") 
+
+
+```
+
+
+
+**Directions:**
+
+- Drain the beans and corn (you may want to rinse the beans), and empty them into a bowl.
+- Dice up the peppers. I like to try to get the chunks are approximately the same size as the beans and corn. Add them to the bowl.
+- Do the same to the feta cheese, if you want that. Add it to the bowl.
+- Mix it all up.
+
+**Variations:**
+
+- Add onion to it. I would start with 1/4 - 1/2 an onion, again diced to about the same size.
+- If you want some heat, dicing up some jalapeno peppers or green chile would probably go well.
+
+
+**Notes:**
+
+- It’s been a while since I’ve made this, so I don’t remember how much cilantro I used. I think about 1/4 cup, loosely filled, and then minced up.
+
+
+
+
+
+
+
+
+
+

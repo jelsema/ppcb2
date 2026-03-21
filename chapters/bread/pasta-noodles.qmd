@@ -1,0 +1,101 @@
+
+
+```{r}
+#| label: setup-pasta-noodles
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Pasta noodles
+
+Pasta noodles!
+
+**Source:** 
+My wife saw it in some magazine and tore the page out.
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: pasta-noodles
+#| eval: true
+
+dat <- tibble(
+  Ingredients = c(
+    "450g white flour",
+    "3g salt",
+    "4g baking soda",
+    "1 1/2 cup milk",
+    "1 1/2 tbsp apple cider vinegar"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Bowl for mixing",
+    "Baking sheet",
+    "", 
+    "",
+    ""
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+- Mix the flours together and make a mound with well in the middle (EXACT middle, no cheating on this).
+- Crack the eggs into the well. Gently beat them with a fork. With each stroke, mix in a little bit of flour. As you beat eggs, protect / rebuild the well with other hand.
+- When fork can no longer stir the forming dough, use hands to knead and incorporate the remaining flour. - - Knead until the dough is smooth and elastic.
+- Cover with a towel and let rest for 20 minutes.
+- Lightly flour surface and roll dough into an 18-inch circle, approximately 1/16 inch thick. Roll from center to ensure even thickness. Should be able to see a faint outline of hand through the lifted sheet of dough.
+- Lightly flour the surface of the dough. Loosely roll into spiral (unclear) and cut into 1/4 - 1/2 inch wide strips. Unfurl strips, sprinkle lightly with flour, and let stand 1 hour. To cook: make sure water is well salted, since the dough has no salt. Cook 2-3 minutes or until tender.
+
+**Variations:**
+
+- Possible to add color/flavor to the pasta. Add at the same time as the egg. Some suggestions are:
+  - HERB: 2 tbsp chipped herbs (parsley, basic, rosemary, oregano, sage, thyme, etc).
+  - RED PEPPER: One roasted red sweet pepper, puréed (approx 3 tbsp).
+  - SPINACH: 5 oz dry spinach, very finely chopped.
+  - SAFFRON: 1/4 tsp saffron threads, crushed and soaked in 2 tbsp warm water for 30 minutes.
+  - BEET: One small roasted beet, puréed (approx 3 tbsp).
+
+**Notes:**
+
+- Haven’t actually made these yet. But I didn’t want to keep the random magazine page laying around, so I typed it up.
+
+
+
+
+
+
+
+
+
+
+

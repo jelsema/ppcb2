@@ -1,0 +1,88 @@
+
+
+```{r}
+#| label: setup-bread-bowls
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Bread Bowls
+
+I’ve only made this once, so I may play with the recipe a bit. Once I get around to doing that, I’ll fill out this recipe. King Arthur Flour doesn't isn't infested with ads or pointless stories, so just go to their page.
+
+**Source:** [KingArthurFlour](https://www.kingarthurbaking.com/recipes/artisan-bread-bowls-recipe)
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: bread-bowls
+#| eval: false
+
+dat <- tibble(
+  Ingredients = c(
+    "2 - 3 potatoes",
+    "2-3 tbsp high-heat oil",
+    "Spices to taste"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Kitchen knife",
+    "Mixing bowl",
+    "Air fryer"
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+- TBD
+
+**Variations:**
+
+- TBD
+
+**Notes:**
+
+- I needed to add a little bit of flour during mixing, the dough was extremely wet.
+- I did NOT refrigerate. I did stretch/folds during the rise. I did 3, another one or two wouldn’t hurt, depending on timeframe.
+- Try not to slash too deep or far down the sides.
+
+
+
+
+
+
+
+
+
+
+

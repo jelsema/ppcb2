@@ -1,0 +1,87 @@
+
+
+```{r}
+#| label: setup-focaccia
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Focaccia
+
+Another one that I generally just go to King Arthur Flour for. I’ll probably add the details here eventually (especially if I make any changes or have comments), but I don’t think that KAF has an obnoxious website.
+
+
+**Source:** [KingArthurFlour](https://www.kingarthurbaking.com/recipes/golden-focaccia-recipe)
+
+
+**Ingredients:**
+
+
+```{r}
+#| label: focaccia
+#| eval: false
+
+dat <- tibble(
+  Ingredients = c(
+    "2 - 3 potatoes",
+    "2-3 tbsp high-heat oil",
+    "Spices to taste"
+  ),
+  spcr1 = " ",
+  Tools = c(
+    "Kitchen knife",
+    "Mixing bowl",
+    "Air fryer"
+  )
+)
+
+
+colnames(dat)[str_detect(colnames(dat), "spcr")] <- ""
+
+dat |> 
+  tt(  theme = "striped" ) |> 
+  style_tt(fontsize = 0.8) |> 
+  style_tt( i=0, background=bgcol, color="white")
+
+
+```
+
+
+
+**Directions:**
+
+- TBD
+
+**Variations:**
+
+- TBD
+
+**Notes:**
+
+- TBD
+
+
+
+
+
+
+
+
+
+
+
