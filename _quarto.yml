@@ -68,6 +68,9 @@ book:
         - chapters/bread/irish-soda-bread.qmd
         - chapters/bread/pasta-noodles.qmd
         - chapters/bread/pretzel-rolls.qmd
+    - part: "Sourdough"
+      chapters:
+        - chapters/sourdough/basics.qmd
 format:
   html:
     theme: 

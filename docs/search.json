@@ -465,5 +465,38 @@
       "Breads",
       "<span class='chapter-number'>37</span>  <span class='chapter-title'>Pretzel Rolls</span>"
     ]
+  },
+  {
+    "objectID": "chapters/sourdough/basics.html",
+    "href": "chapters/sourdough/basics.html",
+    "title": "38  Basics",
+    "section": "",
+    "text": "38.1 The Definitions\nIf you read some websites or books about bread, you may come across terms like hydration, inoculation, and some others. I’ll describe some of these terms, and include some formulas and calculations.\nI think these are some terms to be precise about describing something that can have a lot of variation, but for most peoples’ practical use doesn’t matter too much. I enjoy math, so I’ll provide the formulas and such, but you can probably skip most of that.\nMost important is to use a kitchen scale to measure ingredients. This is because flour can compact, so “1 cup” isn’t always the same amount.\nUsing and maintaining your sourdough starter means keeping track of the hydration so that you know how much flour and water are in it, so that you know how much flour and water to add when you want to bake a loaf. I’ll start with calculations for maintaining the starter, and then into using a started to make a loaf of bread.",
+    "crumbs": [
+      "Sourdough",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sourdough/basics.html#the-definitions",
+    "href": "chapters/sourdough/basics.html#the-definitions",
+    "title": "38  Basics",
+    "section": "",
+    "text": "Hydration: The ratio of water to flour in the recipe, usually expressed as a percentage. So if you use 100 g of flour and 60 g of water, the hydration is \\(H=W/F=60/100=0.60\\) or \\(60%\\).\nInoculation: For sourdough, this is the percentage of the total flour which comes from the starter.\nBaker’s percent: The amount of an ingredient relative to the amount of flour. This is exactly like the hydration, but the hydration is specifically about the liquid, the baker’s percent is for any ingredient.",
+    "crumbs": [
+      "Sourdough",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sourdough/basics.html#the-starter",
+    "href": "chapters/sourdough/basics.html#the-starter",
+    "title": "38  Basics",
+    "section": "38.2 The Starter",
+    "text": "38.2 The Starter\nA sourdough starter is a living culture. Once established, I’ve found it to be pretty robust, but not immortal. If you don’t feed it, it will eat everything it can and then, eventually, die. The usual recommendation I see is to double the weight of the starter at feeding time. So if you have 40 g of starter, you’d want to add around 40 g at feeding time.\nMost people keep their starter at 100% hydration, which just means adding equal weight of flour and water when you feed it.\nMore to be added.",
+    "crumbs": [
+      "Sourdough",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Basics</span>"
+    ]
   }
 ]

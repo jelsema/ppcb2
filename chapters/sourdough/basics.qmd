@@ -1,0 +1,64 @@
+
+
+```{r}
+#| label: setup-bread-bowls
+#| results: false
+#| output: false
+
+
+library("tidyverse")
+library("tinytable")
+
+
+
+tlwd <- 0.125
+bgcol <- "grey60"
+bgcol <- "skyblue4"
+
+
+
+```
+
+
+
+## Basics
+
+If you read some websites or books about bread, you may come across terms like hydration, inoculation, and some others. I’ll describe some of these terms, and include some formulas and calculations. 
+
+I think these are some terms to be precise about describing something that can have a lot of variation, but for most peoples' practical use doesn't matter too much. I enjoy math, so I'll provide the formulas and such, but you can probably skip most of that.
+
+Most important is to use a kitchen scale to measure ingredients. This is because flour can compact, so "1 cup" isn't always the same amount.
+
+
+## The Definitions
+
+
+- Hydration: The ratio of water to flour in the recipe, usually expressed as a percentage. So if you use 100 g of flour and 60 g of water, the hydration is $H=W/F=60/100=0.60$ or $60%$.
+- Inoculation: For sourdough, this is the percentage of the total flour which comes from the starter.
+- Baker’s percent: The amount of an ingredient relative to the amount of flour. This is exactly like the hydration, but the hydration is specifically about the liquid, the baker’s percent is for any ingredient.
+
+Using and maintaining your sourdough starter means keeping track of the hydration so that you know how much flour and water are in it, so that you know how much flour and water to add when you want to bake a loaf. I’ll start with calculations for maintaining the starter, and then into using a started to make a loaf of bread.
+
+
+## The Starter 
+
+A sourdough starter is a living culture. Once established, I’ve found it to be pretty robust, but not immortal. If you don’t feed it, it will eat everything it can and then, eventually, die. The usual recommendation I see is to double the weight of the starter at feeding time. So if you have 40 g of starter, you’d want to add around 40 g at feeding time. 
+
+
+Most people keep their starter at 100% hydration, which just means adding equal weight of flour and water when you feed it.
+
+
+
+More to be added.
+
+
+
+
+
+
+
+
+
+
+
+
